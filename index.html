@@ -2,37 +2,40 @@
 <html>
   <head>
     <title>Desafio dos Micro Tempos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <div>
-      <h1>PRESENTE INTELIGENTE</h1>
+    <div id="presente-informacao">
+      <h1>Presente Inteligente</h1>
       <div>
         <p>Vida Atual: <span id="microtempos"></span> Microtempos</p>
-        <p>Minutos passados: <span id="minutos"></span> Minutos</p>
+        <p>Minutos completos passados: <span id="minutos"></span> Minutos</p>
         <p>Segundos até próximo minuto: <span id="segundos"></span></p>
       </div>
-      <button>OBTER PRESENTE</button>
+      <button>Obter Presente</button>
     </div>
 
-    <div>
+    <div id="contexto">
       <h2>Bem-vindo!</h2>
 
       <p>
-        Este é um presente inteligente. Ele possui uma vida inicial de 9 microtempos. A cada minuto que se passa, ele perde e ganha uma quantidade dinâmica de microtempos. A cada minuto terrestre que se passa, o presente ganha um valor “MinusMaisTempo” que vale 3 microtempos.
+        Este é um presente inteligente. Ele possui uma vida inicial de 9 microtempos. A cada 50 microsegundos que se passa, ele perde e ganha uma quantidade dinâmica de microtempos. A cada minuto terrestre que se passa, o presente ganha um valor <b>MinusMaisTempo</b> que vale 3 microtempos.
       </p>
 
       <p>
-        Porém, ao mesmo tempo que ele ganha esses 3 microtempos, ele perde o valor “Tempustade”. O valor de Tempustade é obtido multiplicando os minutos terrestres passados pelo valor de “Distempo”. O Distempo é o número de minutos terrestres adiantado em dois minutos.
+        Porém, ao mesmo tempo que ele ganha esses 3 microtempos, ele perde o valor <b>Tempustade</b>. O valor de Tempustade é obtido multiplicando os minutos terrestres passados pelo valor de <b>Distempo</b>. O Distempo é o número de minutos terrestres adiantado em dois minutos.
       </p>
 
       <p>
-        Apesar disso, para esse presente durar mais tempo, eu deixei outro evento chamado de “MaisMaisTempo” que também acontece a cada minuto terrestre passado. A cada MaisMaisTempo, o presente ganha o valor de um “Tempisco”. O Tempisco nada mais é que o valor de um Tempustade dividido pelo valor de um “MinusMaisTempoTristonho”. Um MinusMaisTempoTristonho é um MinusMaisTempo multiplicado pelo número de minutos terrestres passados.
+        Apesar disso, para esse presente durar mais tempo, eu deixei outro evento chamado de <b>MaisMaisTempo</b> que também acontece a cada minuto terrestre passado. A cada MaisMaisTempo, o presente ganha o valor de um <b>Tempisco</b>. O Tempisco nada mais é que o valor de um Tempustade dividido pelo valor de um <b>MinusMaisTempoTristonho</b>. Um MinusMaisTempoTristonho é um MinusMaisTempo multiplicado pelo número de minutos terrestres passados.
       </p>
 
       <p>
-        Para obter o presente você deve clicar no botão de “OBTER PRESENTE” e escrever a velocidade atual de ganho/perda de microtempos com base no número de minutos passados. Escreva até a 2 casa decimal sem arredondar. Calculadora não é permitido. Boa sorte!
+        Para obter o presente você deve clicar no botão de “OBTER PRESENTE” e escrever a velocidade de ganho/perda de microtempos do último minuto completo passado. Escreva até a 2 casa decimal sem arredondar. Calculadora não é permitido. Boa sorte!
       </p>
     </div>
   </body>
